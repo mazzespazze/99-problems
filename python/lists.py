@@ -68,7 +68,7 @@ remove = lambda l,k: (l.pop(k),l)[::-1]
 insert = lambda l,k,el: l[0:k]+[el]+l[k:]
 
 #22 creating a list containing all integers within a given range
-_range = lambda a,b: [x for x in range(a,b+1)]
+_range = lambda a,b: list(range(a,b+1)) #list(map(lamda x: x, range(a,b+1)))
 
 #23 extract a given number of randomly selected elements from a list (so n is the number of random elements that we have to pick up)
 #HINT: I have imported random ~> import random
@@ -94,7 +94,6 @@ permute_all = lambda l, n: list(itertools.permutations(l,n))
 #a) In how many ways can a group of 9 people work in 3 disjoint subgroups of 2, 3 and 4 persons? 
 #We are gonna write a function that generates all the possibilities.
 #d = 9, a = 2, b = 3, c = 4
-def group(s,d,a,b,c):
 
 if __name__ == '__main__':
 	l = [1,2,3,4,5,6]
