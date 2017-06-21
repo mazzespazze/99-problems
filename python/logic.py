@@ -17,8 +17,8 @@ gray = lambda n: n and[x+y for x in '01' for y in gray(n-1)[::1-2*int(x)]] or ['
 #50 Huffman code
 if __name__ == '__main__':
 	print(_and(1,0))
-	print(_or(1,0))
-	print(_xor(1,0))
+		print(_or(1,0))
+		print(_xor(1,0))
 	print(_nand(1,0))
 	print(_nor(1,0))
 	print(_equ(1,1))
